@@ -66,3 +66,9 @@ return personinfo;}
 function findEmployeeByFirstName(srcArray,firstName){
   return srcArray.find(person=>person.firstName=firstName)
 }
+function calculatePayroll(array){
+return array.reduce(function(acc, d){
+    return acc+ this.allWagesFor()
+}
+)  
+}
