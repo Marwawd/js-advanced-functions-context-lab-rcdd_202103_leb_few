@@ -42,7 +42,7 @@ return personinfo;}
    return this;
   }
 
-  
+
  function hoursWorkedOnDate(date){
    let out=this.timeOutEvents.find(person=> return person.date=date);
    let inn=this.timeInEvents.find(person=> return person.date=date);
