@@ -50,3 +50,15 @@ return personinfo;}
  function wagesEarnedOnDate(date){
   return hoursWorkedOnDate.call(this,date)*this.payPerHour;
  }
+ function allWagesFor(){
+   let dates = this.timeInEvents.map(function(e){
+      return e.date
+  })
+
+  let payable = dates.reduce(function(acc, d){
+      return acc+ wagesEarnedOnDate.call(this, d)
+  }.bind(this), 0)
+
+  return payable
+}
+ }
