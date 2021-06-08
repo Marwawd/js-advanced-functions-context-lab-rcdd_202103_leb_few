@@ -12,12 +12,7 @@ return personinfo;}
    return array.map(function(row){
      return createEmployeeRecord(row)
  })
-  //  let t=[];
-  //  for (let array in arrays)
-  // {
-  //   t.push(createEmployeeRecord(array))
-  // }
-  // return t;
+
  }
 
  function createTimeInEvent(date){
@@ -46,8 +41,8 @@ return personinfo;}
   }
 
 
- // function hoursWorkedOnDate(date){
- //   let out=this.timeOutEvents.find(person=> return person.date=date);
- //   let inn=this.timeInEvents.find(person=> return person.date=date);
- //   return (out.hour - inn.hour) /100
- // }
+ function hoursWorkedOnDate(date){
+   let out=this.timeOutEvents.find(person=> return person.date=date);
+   let inn=this.timeInEvents.find(person=> return person.date=date);
+   return (out.hour - inn.hour) /100
+ }
