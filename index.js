@@ -48,5 +48,5 @@ return personinfo;}
  }
 
  function wagesEarnedOnDate(date){
-   return this.hoursWorkedOnDate(date)*this.payPerHour;
+  return hoursWorkedOnDate.call(this,date)*this.payPerHour;
  }
