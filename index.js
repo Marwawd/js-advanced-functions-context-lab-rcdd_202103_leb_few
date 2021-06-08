@@ -70,5 +70,5 @@ function calculatePayroll(array){
 return array.reduce(function(acc, d){
     return acc+ this.allWagesFor()
 }
-)  
+)
 }
