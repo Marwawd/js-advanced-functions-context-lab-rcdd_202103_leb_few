@@ -61,3 +61,8 @@ return personinfo;}
 
   return payable
 }
+
+
+function findEmployeeByFirstName(srcArray,firstName){
+  return srcArray.map(person=>return person.firstName===firstName)
+}
