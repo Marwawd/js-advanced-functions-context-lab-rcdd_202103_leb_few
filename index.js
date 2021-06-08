@@ -46,3 +46,7 @@ return personinfo;}
    let inn=this.timeInEvents.find(function(person){return person.date===date});
    return (out.hour - inn.hour) /100
  }
+
+ function wagesEarnedOnDate(date){
+   return this.hoursWorkedOnDate(date)*this.payPerHour;
+ }
