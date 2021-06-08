@@ -8,13 +8,16 @@ timeInEvents:[],
 timeOutEvents:[]
 }
 return personinfo;}
- function createEmployeeRecords(arrays){
-   let t=[];
-   for (let array in arrays)
-  {
-    t.push(createEmployeeRecord(array))
-  }
-  return t;
+ function createEmployeeRecords(array){
+   return array.map(function(row){
+     return createEmployeeRecord(row)
+ })
+  //  let t=[];
+  //  for (let array in arrays)
+  // {
+  //   t.push(createEmployeeRecord(array))
+  // }
+  // return t;
  }
 
  function createTimeInEvent(date){
