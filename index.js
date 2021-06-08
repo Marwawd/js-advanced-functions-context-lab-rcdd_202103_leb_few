@@ -64,5 +64,5 @@ return personinfo;}
 
 
 function findEmployeeByFirstName(srcArray,firstName){
-  return srcArray.find(person=>return person.firstName=firstName)
+  return srcArray.find(person=>person.firstName=firstName)
 }
